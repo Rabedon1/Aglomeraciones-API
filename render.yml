@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: aglomeraciones-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host $PORT --workers 1
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
+    autoDeploy: false  # Desactiva auto-deploy si quieres control manual

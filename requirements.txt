@@ -1,0 +1,5 @@
+ultralytics
+deepface
+paho-mqtt
+opencv-python
+collections  # Ya viene con Python
